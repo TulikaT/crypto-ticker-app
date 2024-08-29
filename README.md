@@ -24,13 +24,6 @@ Usage
     Compare Prices: Look at the buy/sell columns to find the best deals.
     Save to Home Screen: (If applicable) Use the "Add to Home Screen" button for quick access.
 
-File Structure
-
-    /client: Contains frontend files (HTML, CSS, JS).
-    /server: Contains backend files (Node.js, Express.js).
-    /models: Defines the data structure using Mongoose for MongoDB.
-    /routes: Contains API routes to handle requests.
-
 Contributions are welcome! To contribute:
 
     Fork the repository.
