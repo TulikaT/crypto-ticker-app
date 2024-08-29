@@ -1,0 +1,223 @@
+/* styles.css */
+
+body {
+    background-color: #1e1e1e;
+    color: #d3d3d3;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #2c2c2c;
+}
+
+.app-title {
+    font-size: 1.5rem;
+    color: #00d1b2;
+}
+
+.header-controls {
+    display: flex;
+    gap: 1rem;
+}
+
+header select, header button {
+    padding: 0.5rem;
+    background-color: #343a40;
+    border: 1px solid #444;
+    color: #d3d3d3;
+    border-radius: 5px;
+}
+
+header button {
+    background-color: #00d1b2;
+    color: #1e1e1e;
+    border: none;
+}
+
+main {
+    padding: 1rem;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.stat, .best-price {
+    text-align: center;
+}
+
+.best-price h2 {
+    color: #00d1b2;
+}
+
+#ticker-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+#ticker-table th, #ticker-table td {
+    padding: 0.75rem;
+    border: 1px solid #444;
+    text-align: center;
+}
+
+#ticker-table th {
+    background-color: #343a40;
+    color: #00d1b2;
+}
+
+#ticker-table tbody tr:nth-child(odd) {
+    background-color: #2c2c2c;
+}
+
+#ticker-table tbody tr:nth-child(even) {
+    background-color: #3a3a3a;
+}
+
+#add-to-home-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #00d1b2;
+    color: #1e1e1e;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#add-to-home-btn:hover {
+    background-color: #00a3a0;
+}
+
+/* Toggle Button */
+.theme-toggle-btn {
+    padding: 0.5rem 1rem;
+    background-color: #00d1b2;
+    color: #1e1e1e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.theme-toggle-btn:hover {
+    background-color: #00a3a0;
+}
+
+/* Light Theme */
+body.light-theme {
+    background-color: #ffffff;
+    color: #1e1e1e;
+}
+
+body.light-theme header {
+    background-color: #f8f9fa;
+}
+
+body.light-theme #ticker-table th {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+body.light-theme #ticker-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+body.light-theme #ticker-table tbody tr:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+body.light-theme #add-to-home-btn {
+    background-color: #00a3a0;
+    color: #ffffff;
+}
+
+body.light-theme #add-to-home-btn:hover {
+    background-color: #00a3a9
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    border-top: 1px solid #444;
+}
+
+/* Add to Home Button */
+.add-to-home-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.add-to-home-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #00d1b2;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hodlinfo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./favicon.ico">
+</head>
+<body>
+    <header>
+        <h1 class="app-title">HODLINFO</h1>
+        <div class="header-controls">
+            <select id="currency-select">
+                <option value="INR">INR</option>
+                <!-- Add other currency options here -->
+            </select>
+            <select id="crypto-select">
+                <option value="BTC">BTC</option>
+                <!-- Add other cryptocurrency options here -->
+            </select>
+            <button id="buy-crypto-btn">Buy BTC</button>
+            <button id="connect-telegram-btn">Connect Telegram</button>
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+            
+        </div>
+    </header>
+    <main>
+        <section class="stats">
+            <div class="stat">
+                <h2>0.1%</h2>
+                <p>5 Mins</p>
+            </div>
+            <div class="stat">
+                <h2>0.96%</h2>
+                <p>1 Hour</p>
+            </div>
+            <div class="best-price">
+                <h2>Best Price to Trade</h2>
+                <h1 id="best-price">₹26,56,110</h1>
+            </div>
+            <div class="stat">
+                <h2>2.73%</h2>
+                <p>1 Day</p>
+            </div>
+            <div class="stat">
+                <h2>7.51%</h2>
+                <p>7 Days</p>
+            </div>
+        </section>
+
+        <section class="table-container">
+            <table id="ticker-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Platform</th>
+                        <th>Last Traded Price</th>
+                        <th>Buy / Sell Price</th>
+                        <th>Difference</th>
+                        <th>Savings</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be inserted here dynamically -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Your App Name. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
